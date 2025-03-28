@@ -13,6 +13,7 @@ export interface User {
   status: "active" | "inactive";
   lastLogin: string;
   createdAt: string;
+  jobPositionId?: string; // ID del puesto de trabajo específico
 }
 
 // 10 usuarios subadministradores (prevencionistas, administradores de contrato y supervisores)
@@ -26,6 +27,7 @@ export const subAdminUsers: User[] = [
     status: "active",
     lastLogin: "2024-05-10T08:45:00",
     createdAt: "2023-11-15",
+    jobPositionId: "preventionist",
   },
   {
     id: "102",
@@ -35,6 +37,7 @@ export const subAdminUsers: User[] = [
     status: "active",
     lastLogin: "2024-05-09T14:30:00",
     createdAt: "2023-10-20",
+    jobPositionId: "preventionist",
   },
   {
     id: "103",
@@ -44,6 +47,7 @@ export const subAdminUsers: User[] = [
     status: "inactive",
     lastLogin: "2024-04-28T09:15:00",
     createdAt: "2023-09-05",
+    jobPositionId: "preventionist",
   },
 
   // Administradores de contrato
@@ -55,6 +59,7 @@ export const subAdminUsers: User[] = [
     status: "active",
     lastLogin: "2024-05-10T10:20:00",
     createdAt: "2023-08-12",
+    jobPositionId: "safety-supervisor",
   },
   {
     id: "105",
@@ -64,6 +69,7 @@ export const subAdminUsers: User[] = [
     status: "active",
     lastLogin: "2024-05-08T16:45:00",
     createdAt: "2023-11-30",
+    jobPositionId: "safety-supervisor",
   },
   {
     id: "106",
@@ -73,6 +79,7 @@ export const subAdminUsers: User[] = [
     status: "inactive",
     lastLogin: "2024-04-15T11:30:00",
     createdAt: "2023-10-10",
+    jobPositionId: "safety-supervisor",
   },
 
   // Supervisores
@@ -84,6 +91,7 @@ export const subAdminUsers: User[] = [
     status: "active",
     lastLogin: "2024-05-10T07:30:00",
     createdAt: "2023-09-22",
+    jobPositionId: "foreman",
   },
   {
     id: "108",
@@ -93,6 +101,7 @@ export const subAdminUsers: User[] = [
     status: "active",
     lastLogin: "2024-05-09T15:10:00",
     createdAt: "2023-12-05",
+    jobPositionId: "foreman",
   },
   {
     id: "109",
@@ -124,6 +133,7 @@ export const operationalUsers: User[] = [
     status: "active",
     lastLogin: "2024-05-10T06:30:00",
     createdAt: "2023-09-15",
+    jobPositionId: "underground-operator",
   },
   {
     id: "202",
@@ -133,6 +143,7 @@ export const operationalUsers: User[] = [
     status: "active",
     lastLogin: "2024-05-10T07:15:00",
     createdAt: "2023-10-05",
+    jobPositionId: "master-builder",
   },
   {
     id: "203",
@@ -142,6 +153,7 @@ export const operationalUsers: User[] = [
     status: "active",
     lastLogin: "2024-05-09T16:45:00",
     createdAt: "2023-11-20",
+    jobPositionId: "rigger",
   },
   {
     id: "204",
@@ -151,6 +163,7 @@ export const operationalUsers: User[] = [
     status: "inactive",
     lastLogin: "2024-04-25T08:30:00",
     createdAt: "2023-08-10",
+    jobPositionId: "heavy-equipment-operator",
   },
   {
     id: "205",
@@ -160,6 +173,7 @@ export const operationalUsers: User[] = [
     status: "active",
     lastLogin: "2024-05-10T05:45:00",
     createdAt: "2023-09-28",
+    jobPositionId: "mining-assistant",
   },
   {
     id: "206",
@@ -169,6 +183,7 @@ export const operationalUsers: User[] = [
     status: "active",
     lastLogin: "2024-05-09T14:20:00",
     createdAt: "2023-10-15",
+    jobPositionId: "master-builder-first",
   },
   {
     id: "207",
@@ -178,6 +193,7 @@ export const operationalUsers: User[] = [
     status: "active",
     lastLogin: "2024-05-08T17:10:00",
     createdAt: "2023-11-05",
+    jobPositionId: "alarife",
   },
   {
     id: "208",
@@ -187,6 +203,7 @@ export const operationalUsers: User[] = [
     status: "inactive",
     lastLogin: "2024-04-30T09:25:00",
     createdAt: "2023-12-10",
+    jobPositionId: "underground-operator",
   },
   {
     id: "209",
